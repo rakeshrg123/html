@@ -2,58 +2,79 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Form</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		form{
+			margin: 100px 550px;
+		}
+
+		
+	</style>
 </head>
 <body>
-	<form action="login.html" method="GET">
-		<div>
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" maxlength="25" placeholder="Username"  required>
-		</div>
-		<div>
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" value="text@example.com" required>
-		</div>
-		<div>
-			<label for="category">Category</label>
-			<select id="category" name="category">
-				<option value="student">Student</option>
-				<option value="employee">Employee</option>	
-				<option value="freelancer" selected="freelancer">Freelancer</option>
-			</select>
-		</div>
-		<div>
-			<label for="ticket">1 ticket</label>
-			<input type="radio" name="ticket" id="ticket" value="ticket">
-		</div>
-		<div>
-			<label for="ticket">2 ticket</label>
-			<input type="radio" name="ticket" id="ticket" value="ticket" checked>
-		</div>
-		<div>
-			<label for="ticket">3 ticket</label>
-			<input type="radio" name="ticket" id="ticket" value="ticket"	>
-		</div>
-		<div>
-			<label for="note">Notes</label>
-			<textarea id="note" name="note" placeholder="Description"></textarea>
-		</div>
-		<div>
-			<label for="online payment">Online Payment</label>
-			<input type="checkbox" name="online payment" id="online payment" value="online payment" required>
-		</div>
-		<div>
-			<label for="date">Event date</label>
-			<input type="date" name="date" id="date" required>
-		</div>
-		<div>
-			<label for="password">Password</label>
-			<input type="password" id="pwd" name="pwd" minlength="6" required>
-		</div>
-		<input type="reset" value="Reset"> 
-		<input type="submit" value="Submit">
-	</form>
 
+ <section>
+	
+		<form action="/action_page.php" method="get">
+			<h1>FORM</h1>
+		<!-- input fields start -->
+			<label for="name">Name :</label>
+			 <input type="text" name="text" placeholder="name" maxlength="25"  required><br><br>
+			<label for="mail">E-mail :</label>
+			 <input type="text" name="text" placeholder=" test@example.com " autofocus required><br><br>
+			<label for="Password">Password :</label>
+			 <input type="Password" name="pwd" min="6" required><br><br>
+        <!-- input fields end -->
+
+        <!-- checkbox start -->
+			<label for="category"> Category : </label>
+			 <select id="category" name="category" required>
+				<option value="student">Student</option>
+				<option value="employee">Employee</option>
+				<option value="freelancer" selected>Freelancer</option>
+			 </select> <br><br>
+		<!-- checkbox end -->
+
+         <!-- event date starts     -->
+
+           <label for="event date">Even Date :</label>
+			 <input type="date"  required><br><br>
+
+		<!-- event date end     -->
+
+         <!-- radio button starts -->
+
+			<input type="radio" name="ntickets" value="1 ticket">1 ticket
+			<input type="radio" name="ntickets" value="2 ticket" checked>2 tickets
+			<input type="radio" name="ntickets" value="3 ticket">3 tickets <br><br>
+
+		<!-- radio button end -->
+		<!-- checkbox sarts -->
+
+           <label for="online payment"> Online Payment</label>
+             <input type="checkbox" name="online payment" value="OP" required><br><br>
+		<!-- checkbox end -->
+
+		<!-- notes input field start -->
+
+            <label for="notes"> Notes </label>
+             <textarea type="textarea"  id="notes" placeholder="Discription"></textarea><br><br>
+
+		<!-- notes input field end -->
+
+
+        <!-- submit button starts -->
+ 
+               <input type="submit" value="submit"> <br><br>
+
+        <!-- submit button end -->
+
+		</form>
+ </section>
 </body>
 </html>
