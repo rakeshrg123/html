@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login form</title>
+</head>
+<body>
+	<form action="login.html" method="GET">
+		<div>
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" maxlength="25" placeholder="Username"  required>
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" value="text@example.com" required>
+		</div>
+		<div>
+			<label for="category">Category</label>
+			<select id="category" name="category">
+				<option value="student">Student</option>
+				<option value="employee">Employee</option>	
+				<option value="freelancer" selected="freelancer">Freelancer</option>
+			</select>
+		</div>
+		<div>
+			<label for="ticket">1 ticket</label>
+			<input type="radio" name="ticket" id="ticket" value="ticket">
+		</div>
+		<div>
+			<label for="ticket">2 ticket</label>
+			<input type="radio" name="ticket" id="ticket" value="ticket" checked>
+		</div>
+		<div>
+			<label for="ticket">3 ticket</label>
+			<input type="radio" name="ticket" id="ticket" value="ticket"	>
+		</div>
+		<div>
+			<label for="note">Notes</label>
+			<textarea id="note" name="note" placeholder="Description"></textarea>
+		</div>
+		<div>
+			<label for="online payment">Online Payment</label>
+			<input type="checkbox" name="online payment" id="online payment" value="online payment" required>
+		</div>
+		<div>
+			<label for="date">Event date</label>
+			<input type="date" name="date" id="date" required>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="pwd" name="pwd" minlength="6" required>
+		</div>
+		<input type="reset" value="Reset"> 
+		<input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>
